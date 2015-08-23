@@ -1,0 +1,26 @@
+    <p align="center">插件使用说明：
+    
+    <ol>
+      <li>本插件是ZSXSOFT根据腾讯微博非官方aspSDK写成。</li>
+      <li>修改AppKey和AppSecrct前，你必须先注销。</li>
+      <li>请不要滥用App Key和App Secrct：不要乱刷新本页面。</li>
+      <li>因为腾讯微博使用Oauth认证方式，所以：
+        <ol>
+          <li>即使您的网站被攻破，本插件也不会泄露你的腾讯微博密码，最多只是用您的帐号发送恶意信息。您可以在<a href='http://open.t.qq.com/apps/appslist.php' target='_blank'>这个页面</a>（入口：腾讯微博最上方的“应用”--“我的应用”）取消授权，免除危害。</li>
+          <li>初次使用需要先允许本插件访问您的腾讯微博。请放心，本插件不做任何的恶意行为。</li>
+        </ol>
+      </li>
+      <li> 当找不到头像时显示的头像配置方法：<br />
+        <br />
+        在模板的  b_article_comment.html的适当位置，插入代码：<br />
+        <br />
+        <br />
+        &lt;img src=&quot;<font color='red'>&lt;#ZC_BLOG_HOST#&gt;/ZBToQQWb/head.asp?nm=&lt;#article/comment/name#&gt;&amp;size=100&amp;gravatar=&lt;#article/comment/emailmd5#&gt;</font>&quot; alt=&quot;&lt;#article/comment/name#&gt;的头像&quot; title=&quot;&lt;#article/comment/name#&gt;的头像&quot; width=&quot;100&quot; height=&quot;100&quot; /&gt;<br />
+        <br />
+        其中，nm参数必须是评论者的名字；size必须为10、20、40、50、100中的任何一种；gravatar参数只有当你把“找不到头像的显示头像”设置为Gravatar头像时才可用 。</li>
+      <li>管理平台是如果某用户需要修改腾讯微博绑定帐号信息时用，不允许修改其他信息。</li>
+      <li>本插件的制作者为<a href='http://t.qq.com/zhengshixin163' target="_blank"><font color="red" style="font-size:15px">zsx</font></a>，SDK制作者为<a href='http://t.qq.com/wdssmq' target="_blank">wdssmq</a>，“抄袭”自zx.MYS的<a href='http://bbs.rainbowsoft.org/thread-19882-1-2.html' target="_blank">Twitterz插件</a>（其实不过是抄了接口和设置的页面而已）。点击链接，进入腾讯微博关注吧！</li>
+      <li>感谢<a href='http://www.zwbeta.com' target="_blank">zwbeta</a>、<a href='http://www.oogps.com' target="_blank">oogps</a>勇于担任小白鼠，发现了部分在1.0版的BUG，提出了可贵的建议。与此同时，<a href='http://www.liuyin.me' target="_blank">刘印博客</a>和<a href='http://www.wangjunr.com/' target="_blank">网聚SEO优化</a>又发现了不少云端的BUG。他们的精神值得赞赏……</li>
+      <li>感谢<a href='http://www.oogps.com' target="_blank">oogps对本插件的大力支持，为本插件提了不少建议！</a></li>
+    </ol>
+    </p>
